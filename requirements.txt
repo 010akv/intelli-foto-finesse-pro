@@ -1,0 +1,7 @@
+coloredlogs
+Pillow
+polars
+pandas
+torch
+torchvision
+pyyaml

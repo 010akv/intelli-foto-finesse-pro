@@ -1,0 +1,10 @@
+source: sample-input-images             # local path to source images
+recursive_search: True                  # search source directory recursively. If not set, only searches base directory
+destination: sample-output-images       # local path to destination images, algorithm creates folders as needed
+save_metadata: True                     # save image EXIF metadata to csv file including image path, date, and time, etc.
+metadata_csv: sample-files/metadata.csv # local path to metadata csv file
+
+organize:
+  by: date                              # organize images by date, folder structure: year -> month -> day
+
+    

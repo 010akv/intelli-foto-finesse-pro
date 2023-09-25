@@ -1,0 +1,10 @@
+source:                             # local path to source images
+recursive_search:                   # search source directory recursively. If not set, only searches base directory
+destination:                        # local path to destination images, algorithm creates folders as needed
+save_metadata:                      # save image EXIF metadata to csv file including image path, date, and time, etc.
+metadata_csv:                       # local path to metadata csv file
+
+organize:
+  by:                               # organize images by date, folder structure: year -> month -> day
+
+    
