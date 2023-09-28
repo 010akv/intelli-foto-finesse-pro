@@ -1,0 +1,18 @@
+source: sample-input-images             # local path to source images
+recursive_search: True                  # search source directory recursively. If not set, only searches base directory
+destination: sample-output-images       # local path to destination images, algorithm creates folders as needed
+save_metadata: True                     # save image EXIF metadata to csv file including image path, date, and time, etc.
+metadata_csv: sample-files/metadata.csv # local path to metadata csv file
+
+organize:
+  by: date                              # organize images by date, folder structure: year -> month -> day
+
+classify:
+  image_size: 224                       # image size for classification
+  model: resnet50                       # classification model
+  top_n: 5                              # number of top predictions to save
+  device: cpu                          # device to run model on, cuda or cpu
+  mean: [0.485, 0.456, 0.406]           # mean for normalization
+  std: [0.229, 0.224, 0.225]            # standard deviation for normalization
+  labels_file: "../files/ilsvrc2012_wordnet_lemmas.txt" # imagenet labels
+  image_path: "../sample-images/PXL_20230926_075005148.jpg"  # local path to image to classify
