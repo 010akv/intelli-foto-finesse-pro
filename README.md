@@ -18,15 +18,23 @@ pip install -r requirements.txt
 # Usage
 ## Organize Photos
 ```
-python3 organize_photos.py --org_cfg <LOCAL_PATH_CFG_YAML>
+python3 organize.py --config_file <LOCAL_PATH_CFG_YAML>
 ```
+
+## Classify Photos
+```
+python3 classify.py --config_file <LOCAL_PATH_CFG_YAML>
+```
+
 ## Config Template
-- use template config at [sample-files/template_config.yaml](sample-files/template_config.yaml)
+- use template config at [config/template_config.yaml](config/template_config.yaml)
 
 ## To run a quick test
-- refer to sample config [here](sample-files/config.yaml). Make a directory named sample-input-images inside the root directory of this repo and upload a few sample images
-- Run `python3 organize_photos.py --org_cfg sample-files/config.yaml`
+- refer to sample config [here](config/config.yaml). Make a directory named sample-input-images inside the root directory of this repo and upload a few sample images
+- Organize: Run `python3 organize_photos.py --config_file config/config.yaml`
+- Classify: Run `python3 classify_images.py --config_file config/config.yaml`
 
 
 # What can you do with this repo right now?
 - organize photos by date
+- classify a given image into one of [1000 ImageNet Classes](https://deeplearning.cms.waikato.ac.nz/user-guide/class-maps/IMAGENET/)

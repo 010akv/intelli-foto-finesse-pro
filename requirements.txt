@@ -5,3 +5,4 @@ pandas
 torch
 torchvision
 pyyaml
+opencv-contrib-python

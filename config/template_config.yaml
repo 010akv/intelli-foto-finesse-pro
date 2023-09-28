@@ -7,4 +7,12 @@ metadata_csv:                       # local path to metadata csv file
 organize:
   by:                               # organize images by date, folder structure: year -> month -> day
 
-    
+classify:
+  image_size:                       # image size for classification
+  model:                            # classification model
+  top_n:                            # number of top predictions to save
+  device:                           # device to run model on, cuda or cpu
+  mean:                             # mean for normalization
+  std:                              # standard deviation for normalization
+  labels_file:                      # imagenet labels
+  image_path:                       # local path to image to classify 

@@ -12,7 +12,7 @@ coloredlogs.install(level='INFO',fmt='%(asctime)s %(levelname)s %(message)s')
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--org_cfg', type=str, default='org_cfg.yaml', help='configuration for organizing images')
+    parser.add_argument('--config_file', type=str, default='config_file.yaml', help='configuration for organizing images')
 
     args = parser.parse_args()
     return args
